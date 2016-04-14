@@ -1,4 +1,4 @@
-/*! messenger 1.5.0 */
+/*! messenger 1.4.2 */
 /*
  * This file begins the output concatenated into messenger.js
  *
@@ -579,11 +579,7 @@ window.Messenger.Events = (function() {
         $cancel = $('<button type="button" class="messenger-close" data-dismiss="alert">');
         $cancel.html(opts.closeButtonText);
         $cancel.click(function() {
-          var _base;
           _this.cancel();
-          if (typeof (_base = _this.options).onClickClose === "function") {
-            _base.onClickClose();
-          }
           return true;
         });
         $message.append($cancel);
